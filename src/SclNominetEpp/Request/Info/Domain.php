@@ -57,4 +57,16 @@ class Domain extends AbstractInfo
     {
         return $this->object->getName();
     }
+    
+    /**
+     * Set Value
+     *
+     * @param  string $value
+     */
+    public function lookup($value)
+    {
+        $this->value = $value;
+
+        return $this;
+    }
 }
